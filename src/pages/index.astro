@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import Hero from "@/components/Hero.astro";
+import { Image } from "@unpic/astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="max-w-7xl mx-auto grid place-content-center">
+    <!-- Hero section -->
+    <section class="min-h-screen overflow-hidden rounded-b-lg">
+      <!-- bg -->
+      <div
+        class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
+      >
+        <div
+          class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"
+        >
+        </div>
+      </div>
+      <!-- ----- -->
+
+      <Hero />
+
+    </section>
+
+    <!-- section -->
+    <section class="min-h-screen">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        perspiciatis, harum accusantium inventore ad magnam aperiam corporis
+        veniam quisquam unde recusandae sint maiores vero! Nemo, cumque? Sit
+        quibusdam tempora voluptatibus.
+      </h2>
+    </section>
+
+    <!-- section -->
+    <section class="min-h-screen">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        perspiciatis, harum accusantium inventore ad magnam aperiam corporis
+        veniam quisquam unde recusandae sint maiores vero! Nemo, cumque? Sit
+        quibusdam tempora voluptatibus.
+      </h2>
+    </section>
+
+    <!-- section -->
+    <section class="min-h-screen">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        perspiciatis, harum accusantium inventore ad magnam aperiam corporis
+        veniam quisquam unde recusandae sint maiores vero! Nemo, cumque? Sit
+        quibusdam tempora voluptatibus.
+      </h2>
+    </section>
+  </main>
+</Layout>

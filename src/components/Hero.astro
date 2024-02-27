@@ -1,0 +1,43 @@
+---
+import { Button } from "./ui/button";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { HeartFilledIcon } from "@radix-ui/react-icons";
+import { Image } from "@unpic/astro";
+---
+
+<div class="grid place-content-center pt-24">
+  <!-- alert -->
+  <Alert className="max-w-xl mx-auto mb-4">
+    <HeartFilledIcon className="h-4 w-4" />
+    <AlertTitle>Hurry up!</AlertTitle>
+    <AlertDescription>
+      Get 20% off by referring to your friends. Reach us for details about the
+      offer.
+    </AlertDescription>
+  </Alert>
+
+  <!-- hero title -->
+  <h1 class="text-7xl font-bold text-pretty text-center">
+    Land Your Dream Job with a Powerfully Written Resume
+  </h1>
+
+  <!-- hero button group -->
+  <div class="flex space-x-4 mx-auto pt-16">
+    <Button size={"lg"} className="w-max">
+      <a href="/">Grab Your Resume</a>
+    </Button>
+    <Button size={"lg"} variant="outline" className="w-max">
+      <a href="/">Reach Us</a>
+    </Button>
+  </div>
+
+  <!-- image group -->
+  <Image
+    src="https://res.cloudinary.com/avidu/image/upload/v1704093459/trg/Hero_Image_2_l5cs6y.webp"
+    layout="constrained"
+    width={1346}
+    height={597}
+    alt=""
+    class="mt-24"
+  />
+</div>
