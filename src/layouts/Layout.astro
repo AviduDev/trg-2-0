@@ -28,11 +28,11 @@ import "@/styles/globals.css";
 
   const lenis = new Lenis();
 
-  lenis.on("scroll", (e) => {
+  lenis.on("scroll", (e: any) => {
     console.log(e);
   });
 
-  function raf(time) {
+  function raf(time: any) {
     lenis.raf(time);
     requestAnimationFrame(raf);
   }
