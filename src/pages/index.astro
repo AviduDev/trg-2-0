@@ -4,7 +4,8 @@ import Hero from "@/components/Hero.astro";
 import Features from "@/components/Features.astro";
 import Quote from "@/components/Quote.astro";
 import Services from "@/components/Services.astro";
-import Testimonials from "@/components/Testimonials.tsx"
+import Testimonials from "@/components/Testimonials.tsx";
+import Faqs from "@/components/Faqs.tsx";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -47,6 +48,11 @@ import Testimonials from "@/components/Testimonials.tsx"
     <!-- Testimonials section -->
     <section class="min-h-screen grid place-content-center">
       <Testimonials client:load />
+    </section>
+
+    <!-- section -->
+    <section class="min-h-screen">
+      <Faqs client:load />
     </section>
   </main>
 </Layout>
