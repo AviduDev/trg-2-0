@@ -1,0 +1,45 @@
+---
+import { Image } from "@unpic/astro";
+import { Button } from "./ui/button";
+---
+
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <div
+      class="flex flex-col overflow-hidden rounded-lg bg-violet-900 sm:flex-row md:h-80"
+    >
+      <!-- content - start -->
+      <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-2/5">
+        <h2 class="mb-4 text-xl font-bold text-white md:text-2xl lg:text-4xl">
+          Provide Your Details Below
+        </h2>
+
+        <p class="mb-8 max-w-md text-gray-300">
+          This is a section of some simple filler text, also known as
+          placeholder text. It shares some characteristics of a real written
+          text.
+        </p>
+
+        <div class="mt-auto">
+          <Button variant={"outline"}>
+            <a href="/">Get Your Resume</a>
+          </Button>
+        </div>
+      </div>
+      <!-- content - end -->
+
+      <!-- image - start -->
+      <div
+        class="order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5"
+      >
+        <Image
+          src="https://res.cloudinary.com/avidu/image/upload/v1709138114/The_Resume_Guy_vdxddb.webp"
+          width={1000}
+          height={600}
+          alt=""
+        />
+      </div>
+      <!-- image - end -->
+    </div>
+  </div>
+</div>

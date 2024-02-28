@@ -6,6 +6,8 @@ import Quote from "@/components/Quote.astro";
 import Services from "@/components/Services.astro";
 import Testimonials from "@/components/Testimonials.tsx";
 import Faqs from "@/components/Faqs.tsx";
+import Footer from "@/components/Footer.astro";
+import Cta from "@/components/Cta.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -29,30 +31,37 @@ import Faqs from "@/components/Faqs.tsx";
     </section>
 
     <!-- features section -->
-    <section class="min-h-screen grid place-content-center">
+    <section class="py-24">
       <Features />
     </section>
 
     <!-- Quote section -->
     <section
-      class="grid place-content-center bg-gradient-to-r from-neutral-50 via-purple-100 to-neutral-50 rounded-lg p-16 border border-gray-200"
+      class="grid place-content-center bg-gradient-to-r from-neutral-50 via-purple-100 to-neutral-50 rounded-lg p-16 border border-gray-200 py-24"
     >
       <Quote />
     </section>
 
     <!-- Services section -->
-    <section class="min-h-screen grid place-content-center pt-44">
+    <section class="py-24">
       <Services />
     </section>
 
     <!-- Testimonials section -->
-    <section class="min-h-screen grid place-content-center">
+    <section class="py-24">
       <Testimonials client:load />
     </section>
 
-    <!-- section -->
-    <section class="min-h-screen">
+    <!-- Faqs section -->
+    <section class="py-24">
       <Faqs client:load />
     </section>
+
+    <!-- CTA section -->
+    <section class="py-24">
+      <Cta />
+    </section>
+
+    <Footer />
   </main>
 </Layout>

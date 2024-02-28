@@ -9,9 +9,14 @@ export default function Faqs() {
   return (
     <div className="grid grid-cols-2 gap-2">
       <div>
-        <h2 className="text-6xl font-bold text-pretty">
+        <h2 className="text-6xl font-bold text-pretty pb-4">
           Got Anything to Ask? Look No Further.
         </h2>
+        <p className="max-w-xl text-gray-500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          vitae ab asperiores, ullam non nostrum possimus odio quae ipsum totam
+          maxime cupiditate! Iste libero quo facere non dicta totam doloremque?
+        </p>
       </div>
       <div>
         <Accordion
