@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Features from "@/components/Features.astro";
+import Quote from "@/components/Quote.astro";
+import Services from "@/components/Services.astro";
+import Testimonials from "@/components/Testimonials.tsx"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -25,28 +28,25 @@ import Features from "@/components/Features.astro";
     </section>
 
     <!-- features section -->
-    <section class="min-h-screen">
+    <section class="min-h-screen grid place-content-center">
       <Features />
     </section>
 
-    <!-- section -->
-    <section class="min-h-screen">
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-        perspiciatis, harum accusantium inventore ad magnam aperiam corporis
-        veniam quisquam unde recusandae sint maiores vero! Nemo, cumque? Sit
-        quibusdam tempora voluptatibus.
-      </h2>
+    <!-- Quote section -->
+    <section
+      class="grid place-content-center bg-gradient-to-r from-neutral-50 via-purple-100 to-neutral-50 rounded-lg p-16 border border-gray-200"
+    >
+      <Quote />
     </section>
 
-    <!-- section -->
-    <section class="min-h-screen">
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-        perspiciatis, harum accusantium inventore ad magnam aperiam corporis
-        veniam quisquam unde recusandae sint maiores vero! Nemo, cumque? Sit
-        quibusdam tempora voluptatibus.
-      </h2>
+    <!-- Services section -->
+    <section class="min-h-screen grid place-content-center pt-44">
+      <Services />
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="min-h-screen grid place-content-center">
+      <Testimonials client:load />
     </section>
   </main>
 </Layout>

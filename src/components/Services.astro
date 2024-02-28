@@ -1,0 +1,79 @@
+---
+import { Image } from "@unpic/astro";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+
+const image1 =
+  "https://res.cloudinary.com/avidu/image/upload/v1709094561/trg/Our_Services_1_omt1xy.webp";
+const image2 =
+  "https://res.cloudinary.com/avidu/image/upload/v1709094560/trg/Our_Services_2_jzlcwn.webp";
+---
+
+<div>
+  <h2 class="text-6xl font-bold text-center text-pretty pb-4">
+    AIO Solution for Your Job Seeking Journey!
+  </h2>
+  <p class="max-w-2xl mx-auto text-center mb-24 text-gray-500">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptatum!
+    Non esse laboriosam fugit quasi nesciunt itaque dolorum quas quam, mollitia,
+    libero distinctio rerum assumenda corporis, velit culpa veniam incidunt!
+  </p>
+  <div class="content">
+    <Image
+      src={image2}
+      height={560}
+      width={1280}
+      alt="our services"
+      class="rounded-lg"
+    />
+
+    <!-- service container -->
+    <div class="grid grid-cols-3 gap-4 pt-4 px-4">
+      <!-- service 1 -->
+      <div
+        class="bg-purple-50 p-4 rounded-lg border border-neutral-200 flex flex-col justify-between"
+      >
+        <h3 class="text-3xl font-semibold pb-2">Resume Writing</h3>
+        <p>
+          Creating powerful and eye catching resumes that stand out from the
+          crowd. Every resume we create are tailored to your job needs we'll
+          highlight your unique skills and experience to land your dream job,
+          not just any job. Leave the resume writing to the experts and focus on
+          what you do best.
+        </p>
+      </div>
+
+      <!-- service 2 -->
+      <div
+        class="bg-purple-50 p-4 rounded-lg border border-neutral-200 flex flex-col justify-between"
+      >
+        <h3 class="text-3xl font-semibold pb-2">Cover Letter Writing</h3>
+        <p>
+          Your resume is the polished gem, showcasing your skills and
+          experience, but it needs the perfect setting to truly sparkle. That's
+          where your cover letter comes in, the dazzling introduction that
+          captures the recruiter's attention and compels them to delve deeper
+          into your resume.
+        </p>
+      </div>
+
+      <!-- service 3 -->
+      <div
+        class="bg-purple-50 p-4 rounded-lg border border-neutral-200 flex flex-col justify-between"
+      >
+        <h3 class="text-3xl font-semibold pb-2">Social Profile Optimization</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
+          ratione iusto sequi, labore quam et error fugiat, saepe quis
+          consequuntur quia mollitia eos minus autem.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
